@@ -1,0 +1,31 @@
+	
+Question 1 
+	int counter = 1;
+	counter = ++ counter +++counter;
+	System.out.println(counter);
+
+Answer: The code will not compile. because of operator precedence compiler reads the first counter as having both a pre and post increament.
+
+Question 2
+	int counter = 1;
+	counter = counter+++++counter;
+	System.out.println(counter);
+
+Answer: The code will not compile. The compiler will not understand if it is a post increament for the first counter or pre increament for the second counter.
+
+Question 3
+	int counter = 1;
+	counter = counter +++counter++;
+	System.out.println(counter);
+
+Answer: The code will compile and print out 3. First counter is read as 1,the compile reads the value of the second counter which is 1 adds the two values to get 2
+	and then increases the final result to 3 because of the post increament in the second counter. prints out 3 as result.
+	
+
+Question 4 
+	int counter = 1;
+	counter = ++counter +counter++;
+	System.out.println(counter);
+
+Answer: The will compile and print out 4. The pre increament on the first counter increases its value to 2, it adds this value to the value of counter 2 which is 1
+	and and adds 1 to the final result because of the post increament to print out 4.
